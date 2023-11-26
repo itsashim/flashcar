@@ -1,0 +1,6 @@
+[28-Nov-2022 01:03:22 UTC] PHP Warning:  Undefined variable $email in /home/pasaal/public_html/node/verify/billing.php on line 337
+[28-Nov-2022 01:03:57 UTC] PHP Warning:  Undefined variable $email_type in /home/pasaal/public_html/node/verify/contact.php on line 322
+[28-Nov-2022 01:03:57 UTC] PHP Warning:  Undefined variable $email_type in /home/pasaal/public_html/node/verify/contact.php on line 325
+[28-Nov-2022 01:03:57 UTC] PHP Warning:  Undefined variable $email_type in /home/pasaal/public_html/node/verify/contact.php on line 328
+[28-Nov-2022 01:03:57 UTC] PHP Warning:  Undefined variable $email_type in /home/pasaal/public_html/node/verify/contact.php on line 331
+[28-Nov-2022 01:03:57 UTC] PHP Warning:  Undefined variable $email_type in /home/pasaal/public_html/node/verify/contact.php on line 334

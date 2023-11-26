@@ -1,0 +1,8 @@
+[29-Mar-2023 09:39:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_magic_quotes_gpc() in /home/sansarhealth/public_html/public/upload/profile/profile_205226.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/sansarhealth/public_html/public/upload/profile/profile_205226.php on line 135
+[29-Mar-2023 09:39:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_magic_quotes_gpc() in /home/sansarhealth/public_html/public/upload/profile/profile_205226.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/sansarhealth/public_html/public/upload/profile/profile_205226.php on line 135

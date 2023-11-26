@@ -1,0 +1,506 @@
+input{
+	-webkit-appearance: none;
+}
+
+.navbar-nav{
+	display: inline-block !important;
+}
+
+.navbar-brand{
+	display: inline-block !important;
+}
+
+.nav-item{
+	display: inline-block !important;
+}
+
+.top-nav .nav-link{
+	font-size: .85rem;
+	font-weight: 600;
+	color: #1c2025 !important;
+	line-height: 1.25;
+}
+
+.middle-nav .nav-link{
+	transition: 0.5s;
+	font-size: 1.03rem;
+	font-weight: 600;
+	color: #2d822a !important;
+}
+
+.middle-nav .active{
+	text-decoration: underline;
+	color: #1b5630 !important;
+}
+
+.middle-nav .nav-link:hover{
+	transition: 0.5s;
+	text-decoration: underline;
+	color: #1b5630 !important;
+}
+
+.ask-huntington{
+	width: 336px;
+	height: 44px;
+	outline: none;
+	border: 1px solid #b1bac5;
+	border-radius: 2px;
+	padding: 0 44px 0 12px;
+	color: #394048;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.ask-huntington-icon{
+	width: 26px;
+	height: 26px;
+	margin-left: -40px;
+	margin-top: -5px;
+}
+
+.bottom-nav{
+	background-color: #f2f2f2;
+}
+
+.bottom-nav .nav-link{
+	transition: 0.25s;
+	font-size: 1.03rem;
+	font-weight: 600;
+	color: #1b5630 !important;
+}
+
+.login-box-container{
+	min-height: 55vh;
+}
+
+.login-icon{
+	width: 3.5rem;
+	height: 3.5rem;
+	background: #5ba63c;
+	padding: .4096em;
+	border-radius: 5px;
+	margin-top: .4096em;
+}
+
+.download-btn{
+	background-color: #a9d42c;
+	color: #394048;
+	border-radius: 100px;
+	padding: 11px 28px;
+	border: 2px solid #83b840;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.1rem;
+	line-height: 1.2857142857;
+	transition: background-color .3s ease;
+	will-change: background-color;
+	font-weight: 500;
+}
+
+.login-box{
+	width: 325px;
+	border: 1px solid #2d822a;
+}
+
+.login-box-container .pill-nav{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+}
+
+.login-box-container .pill-nav li{
+	display: inline-block;
+	font-size: .8rem;
+	font-weight: 700;
+	color: #2d822a;
+	border: 1px solid #b1bac5;
+	padding: 4px 7px;
+	border-radius: 3px;
+}
+
+.login-box-container .pill-nav .active{
+	border-color: #2d822a;
+	background-color: #2d822a;
+	color: white;
+}
+
+.login-box-container .login-header{
+	font-size: 1rem;
+	font-weight: 600;
+	color: #2d822a;
+}
+
+.login-box-container label{
+	font-size: 0.9rem;
+	color: #394048;	
+}
+
+.login-box-container input{
+	width: 100%;
+	height: 44px;
+	outline: none;
+	border: 1px solid #b1bac5;
+	border-radius: 2px;
+	padding: 0 44px 0 12px;
+	color: #394048;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.login-box-container input:focus{
+	outline:1px dotted #5ba63c;
+	outline-offset:2px;
+	border-color:#5ba63c;
+}
+
+.login-btn{
+	transition: 0.5s;
+	padding: .5rem 2rem;
+	color: white;
+	font-size: 1rem;
+	background-color: #394048;
+	border-radius: 5rem;
+	border: 1px solid transparent;
+}
+
+.login-btn:hover{
+	transition: 0.5s;
+	background-color: #1c2025;
+}
+
+.login-forgot{
+	font-size: .8rem;
+	font-weight: 600;
+	color: #1c2025;
+	line-height: 0;
+}
+.login-forgot:hover{
+	color: #1c2025;
+}
+
+.login-box-footer{
+	font-size: .8rem;
+	font-weight: 600;
+	color: #1c2025;
+	line-height: 1.25;
+}
+
+.login-box-footer a{
+	transition: 0.25s;
+	color: #1c2025;
+}
+
+.login-box-footer a:hover{
+	transition: 0.25s;
+	color: #2d822a;
+}
+
+.login-footer ul{
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+}
+
+.login-footer li{
+	display: inline-block;
+}
+
+.login-footer li a{
+	font-size: 1.03rem;
+	font-weight: 600;
+	color: #2d822a;
+	text-decoration: none;
+}
+
+.login-footer li a:hover{
+	text-decoration: underline;
+}
+
+.login-footer .footer-text{
+	font-size: .9rem;
+	color: #1c2025;
+}
+
+.login-footer-mobile ul{
+	list-style: none;
+	padding: 0;
+}
+
+.login-footer-mobile li{
+	padding: 0.3rem 0;
+}
+
+.login-footer-mobile li a{
+	font-size: 1.03rem;
+	font-weight: 600;
+	color: #2d822a;
+	text-decoration: none;
+}
+
+.login-footer-mobile .social-footer{
+	display: inline-block;
+}
+
+.login-footer-mobile .social-footer li{
+	display: inline-block;
+}
+
+.login-footer-mobile .footer-text{
+	font-size: .73rem;
+	color: #1c2025;
+}
+
+.huntington-nav{
+	background-color: #5ba63c;
+	padding: 0;
+}
+.main-logo{
+	height: 1.5625rem;
+	width: 8.25rem;
+}
+.lock-logo-nav{
+	height: 1.5625rem;
+	width: 1.875rem;
+}
+.verify-container{
+	max-width: 740px !important;
+}
+.verify-container h1{
+	font-size: 2rem;
+	font-weight: 350;
+	color: #766d65;
+}
+.verify-container h3{
+	font-weight: 600;
+	color: #5ba63c;
+	font-size: 1.25rem;
+}
+.verify-container p{
+	color: #766d65;
+	font-weight: 400;
+	font-size: 16px;
+}
+.progress-container{
+	background-color: #eee;
+	height: 4px;
+	width: 100%;
+	border-radius: 50px;
+}
+.current-progress{
+	background-color: #5ba63c;
+	height: 6px;
+	position: relative;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50px;
+}
+.verify-container label{
+	color: #766d65;
+	font-weight: 600;
+	font-size: 0.95rem;
+	padding-left: 5px;
+}
+.verify-container input{
+	transition: 0.3s;
+	color: #5ba63c;
+	font-size: 1.25rem;
+	font-weight: 600;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 2px #eee;
+	padding: 5px;
+}
+.verify-container input:invalid{
+	transition: 0.3s;
+	box-shadow: 0 2px #f33;
+}
+.verify-container input:focus{
+	transition: 0.3s;
+	outline: none;
+	box-shadow: 0 2px #766d65;
+}
+.verify-container select{
+	background-color: transparent;
+	transition: 0.3s;
+	color: #5ba63c;
+	font-size: 1.25rem;
+	font-weight: 600;
+	width: 100%;
+	border: none;
+	box-shadow: 0 2px #eee;
+	padding: 5px;
+	padding-bottom: 8px;
+}
+.verify-container select:invalid{
+	transition: 0.3s;
+	box-shadow: 0 2px #f33;
+}
+.verify-container select:focus{
+	transition: 0.3s;
+	outline: none;
+	box-shadow: 0 2px #766d65;
+}
+
+.continue-btn{
+	transition: 0.5s;
+	padding: .5rem 2rem;
+	color: white;
+	font-size: 1.25rem;
+	background-color: #394048;
+	border-radius: 5rem;
+	border: 1px solid transparent;
+}
+
+.continue-btn:hover{
+	transition: 0.5s;
+	background-color: #1c2025;
+}
+
+.back-btn{
+	padding: .5rem 2rem;
+	background-color: white;
+	font-size: 1.25rem;
+	color: #394048;
+	border-radius: 5rem;
+	border: 1px solid #394048;
+}
+
+.main-footer{
+	background-color: #ebebeb;
+	color: #394048;
+}
+
+.main-footer a{
+	color: #394048;
+	margin-left: 1rem;
+	font-size: .875rem;
+}
+
+.footer-links-main{
+	text-align: right;
+}
+
+.footer-house-container{
+	width: auto !important;
+}
+
+@media screen and (max-width: 780px){
+	.footer-links-main{
+		text-align: center;
+	}
+	.footer-house-container{
+		text-align: center;
+		width: 100%;
+		padding: 1.2rem 0;
+		margin: 0 auto;
+	}
+	.footer-house-container::before{
+		content: <br>;
+	}
+	.lock-footer-img{
+		width: 100%;
+		display: inline-block;
+		margin: 1rem 0;
+	}
+}
+
+.alert-form{
+	width: 800px;
+	border-radius: 12px !important;
+	border: none !important;
+	box-shadow: 0 3px 13px 4px rgb(0 0 0 / 13%);
+	color: #394048;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.alert-form h4{
+	font-weight: 600;
+	color: #5ba63c;
+	font-size: 1.5rem;
+}
+
+@keyframes spin {
+ 	0% { transform: rotate(0deg); }
+ 	100% { transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+	0% {
+		transform: translate3d(-50%, -50%, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(-50%, -50%, 0) rotate(360deg);
+	}
+}
+
+.loading {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #eaeced;
+	z-index: 100;
+	opacity: 0.5;
+}
+
+.spin{
+	display: none;
+}
+
+.spin::before {
+	animation: 1.0s linear infinite spinner;
+	animation-play-state: inherit;
+	border: solid 5px #cfd0d1;
+	border-bottom-color: #5ba63c;
+	border-radius: 50%;
+	content: "";
+	height: 40px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 101;
+	transform: translate3d(-50%, -50%, 0);
+	width: 40px;
+	will-change: transform;
+}
+
+@media screen and (max-width: 1265px){
+	.ask-huntington{
+		display: none;
+	}
+	.ask-huntington-icon{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 850px){
+	.mobile{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 849px){
+	.desktop{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1640px){
+	.social-footer{
+		float: right;
+	}
+}
+@media only screen and (max-width: 999px){
+	.alert-form{
+		width: 100%;
+	}
+}

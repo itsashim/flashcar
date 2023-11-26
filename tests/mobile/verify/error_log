@@ -1,0 +1,12 @@
+[19-Oct-2022 15:56:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/verify/personal.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104
+[19-Oct-2022 16:25:31 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "HTTP_HOST" in /home/pasaal/public_html/tests/mobile/includes/antibot.php:104
+Stack trace:
+#0 /home/pasaal/public_html/tests/mobile/includes/antibot.php(124): checkbot()
+#1 /home/pasaal/public_html/tests/mobile/verify/personal.php(4): include('/home/pasaal/pu...')
+#2 {main}
+  thrown in /home/pasaal/public_html/tests/mobile/includes/antibot.php on line 104

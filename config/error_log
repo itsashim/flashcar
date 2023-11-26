@@ -1,0 +1,4 @@
+[06-Apr-2023 19:04:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/sansarhealth/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/sansarhealth/public_html/config/cache.php on line 21
