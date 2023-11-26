@@ -4,17 +4,14 @@
 
 <style>
     body {
-            background-image: linear-gradient(135deg, #9cc1cd 10%, #20748f 100%);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            font-family: "Open Sans", sans-serif;
-            color: #333333;
         }
 
         .box-form {
             margin: 3rem auto;
-            width: 80%;
+            width: 85%;
             background: #FFFFFF;
             border-radius: 10px;
             overflow: hidden;
@@ -22,7 +19,6 @@
             flex: 1 1 100%;
             align-items: stretch;
             justify-content: space-between;
-            box-shadow: 0 0 20px 6px #090b6f85;
         }
 
         label::before {
@@ -36,6 +32,16 @@
                 align-content: center;
                 align-items: center;
             }
+        .box-form .right input {
+            margin: 0 auto;
+            max-width: unset !important;
+         }
+         .box-form .left .overlay img{
+            max-width: 490px;
+         }
+         .box-form .right p{
+            text-align: start;
+         }
         }
 
         .box-form div {
@@ -43,70 +49,54 @@
         }
 
         .box-form .left {
-            color: #FFFFFF;
-            background-size: cover;
-            background-repeat: no-repeat;
-            /*background-image: url("https://i.pinimg.com/736x/5d/73/ea/5d73eaabb25e3805de1f8cdea7df4a42--tumblr-backgrounds-iphone-phone-wallpapers-iphone-wallaper-tumblr.jpg");*/
-            background-image: url("{{ url('public/login_image.jpg') }}");
             overflow: hidden;
-        }
-
-        .box-form .left .overlay {
-            padding: 30px;
             width: 100%;
-            height: 100%;
-            background: #5194a888;
-            overflow: hidden;
-            box-sizing: border-box;
         }
 
-        .box-form .left .overlay h1 {
-            font-size: 6vmax;
-            line-height: 1;
-            font-weight: 900;
-            margin-top: 40px;
-            margin-bottom: 20px;
+        .box-form .left .overlay img{
+           width: 100%;
+           border-radius: 14px;
+           /* max-width: 490px; */
         }
 
-        .box-form .left .overlay span p {
-            margin-top: 30px;
-            font-weight: 900;
-        }
-
-        .box-form .left .overlay span a {
-            background: #3b5998;
-            color: #FFFFFF;
-            margin-top: 10px;
-            padding: 10px 35px;
-            border-radius: 100px;
-            display: inline-block;
-            box-shadow: 0 3px 6px 1px #042d4657;
-        }
-
-        .box-form .left .overlay span a:last-child {
-            background: #1dcaff;
-            margin-left: 30px;
-        }
 
         .box-form .right {
             padding: 40px;
+            margin: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
             overflow: hidden;
+            width: 80%;
+            border-radius: 33px;
+            background: rgba(246, 247, 249, 0.53);
         }
 
         @media (max-width: 980px) {
             .box-form .right {
                 width: 100%;
+                margin-bottom: 2rem;
             }
         }
 
         .box-form .right h5 {
-            font-size: 6vmax;
-            /* line-height: 0; */
+            color: #0C1421;
+            text-align: start;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 100%;
+            letter-spacing: 0.78px;
+            font-style: italic;
         }
 
         .box-form .right p {
-            font-size: 14px;
-            color: #B0B3B9;
+            color:  #313957;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; 
+            letter-spacing: 0.222px;
+            font-family: 'Inter', sans-serif;
         }
 
         .box-form .right .inputs {
@@ -115,12 +105,14 @@
 
         .box-form .right input {
             width: 100%;
+            max-width: 326.405px;
             padding: 10px;
-            margin-top: 25px;
             font-size: 16px;
-            border: none;
             outline: none;
-            border-bottom: 2px solid #B0B3B9;
+            border-radius: 10px;
+            border: 1.111px solid #D4D7E3;
+            background-color: #F7FBFF;
+            color: #8897AD;
         }
 
         .box-form .right .remember-me--forget-password {
@@ -136,16 +128,16 @@
         }
 
         .box-form .right button {
-            float: right;
-            color: #fff;
             font-size: 16px;
             padding: 12px 35px;
-            border-radius: 50px;
+            border-radius: 10px;
             display: inline-block;
             border: 0;
             outline: 0;
-            box-shadow: 0px 4px 20px 0px #b5d1daa6;
-            background-image: linear-gradient(135deg, #5193a8 10%, #065069 100%);
+            box-shadow: -7px 10px 5px 0px rgba(217, 217, 217, 0.45);
+            background-image: linear-gradient(135deg, #ffe500 10%, #ffea33 100%);
+            font-weight: 600;
+            width: 100%;
         }
 
         @media screen and (max-width: 980px) {
@@ -154,48 +146,10 @@
             }
         }
 
-        
-        label {
-            display: block;
-            position: relative;
-            margin-left: 30px;
-        }
 
-        label::before {
-            content: ' \f00c';
-            position: absolute;
-            font-family: FontAwesome;
-            background: transparent;
-            border: 3px solid #70F570;
-            border-radius: 4px;
-            color: transparent;
-            left: -30px;
-            transition: all 0.2s linear;
-        }
 
-        label:hover::before {
-            font-family: FontAwesome;
-            content: ' \f00c';
-            color: #fff;
-            cursor: pointer;
-            background: #70F570;
-        }
 
-        label:hover::before .text-checkbox {
-            background: #70F570;
-        }
 
-        label span.text-checkbox {
-            display: inline-block;
-            height: auto;
-            position: relative;
-            cursor: pointer;
-            transition: all 0.2s linear;
-        }
-
-        label input[type="checkbox"] {
-            display: none;
-        }
 
         @media screen and (max-width: 520px) {
             .box-form .left .overlay span a:last-child {
@@ -213,21 +167,15 @@
 <!-- Login Body -->
         <!-- partial:index.partial.html -->
         <div class="box-form">
-            <div class="left">
+            <div class="left order-2">
                 <div class="overlay">
-                    <h1>Wheels On Palms</h1>
-                    
-                    <span>
-                        {{-- <p>login with social media</p>
-                        <a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i> Login with Twitter</a> --}}
-                    </span>
+                    <img src="{{asset('public/new-images/login-img.jpg')}}" alt="">
                 </div>
             </div>
 
-            <div class="right">
+            <div class="right order-1">
                 <h5>Register</h5>
-                <p>Have an account? <a href="{{ url('login') }}">Login you account. </a></p>
+                <p>Today is a new day. It's your day. You shape it. Sign in to start managing your projects.</p>
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
@@ -237,20 +185,40 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{ asset('user/register') }}" method="POST">
+                <form action="{{ asset('user/register') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="inputs">
+                        <label class="d-block mt-2 text-start text-start text-start" for="name">Name</label>
                         <input type="text" name="name" placeholder=" Enter Your Full Name"  required>
                         <br>
+                        <label class="d-block mt-2 text-start text-start text-start" for="email">Email</label>
                         <input type="text" name="email" placeholder="Enter Your Email"  required >
                         <br>
+                        <label class="d-block mt-2 text-start text-start text-start" for="phone_no">Number</label>
                         <input type="text" name="phone_no" placeholder="Enter Your Phone" required >
                         <br>
+                        <label class="d-block mt-2 text-start text-start text-start" for="password">Password</label>
                         <input type="password" name="password" placeholder="Password" required>
                         <br>
+                        <label class="d-block mt-2 text-start text-start text-start" for="confirm_password">Confirm</label>
                         <input type="password" name="confirm_password" placeholder="Confirm Password" required>
                         <br>
-                        <input type="text" name="otp" placeholder="Type Otp" required>
+                        <label class="d-block mt-2 text-start text-start text-start" for="address">Address</label>
+                        <input type="text" name="address" placeholder="Enter Your Address" required >
+                        <br>
+                       {{-- <input type="text" name="city" placeholder="Enter Your City" required > --}}
+                        <br>
+                        <label class="" for="passport">Passport</label>
+                        <input class=" mt-0 form-control" type="file" name="passport" placeholder="Upload Your Passport">
+                        
+                        <label class="" for="driver_license">Driver License</label>
+                        <input class="mt-0 form-control" type="file" name="driver_license" placeholder="Upload Your Driver License">
+                        
+                        <label class="" for="national_id_card">National Id Card</label>
+                        <input class="mt-0 form-control" type="file" name="national_id_card" placeholder="Upload Your National Id Card">
+                        
+                        <label class="" for="residence_permit">Residence Permit</label>
+                        <input class="mt-0 form-control" type="file" name="residence_permit" placeholder="Upload Your Residence Permit">
                     </div>
 
                     <div class="remember-me--forget-password">
@@ -258,7 +226,7 @@
                         {{-- <label>
                             <input type="checkbox" name="item" checked />
                             <span class="text-checkbox">Remember me</span>
-                        </label> 
+                        </label>
                         <p>forget password?</p> --}}
                     </div>
 
