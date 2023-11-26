@@ -1229,4 +1229,55 @@ main {
     background: rgba(19, 19, 19, 0.16);
 }
 
+.currency_modal {
+    position: absolute;
+    top: 95px;
+    right: 7%;
+    width: 100%;
+    max-width: 80px;
+    background-color: white;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.currency_modal a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.currency_modal a:hover {
+    background-color: #ffe500;
+}
+
+.currency_modal .divider {
+    width: 100%;
+    height: 2px;
+    background: rgba(19, 19, 19, 0.16);
+}
+
+/* Nav Currency */
+.currency a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.currency a {
+    color: black !important;
+}
+.currency:hover {
+    background-color: #ffe500;
+}
+/* Nav currency End */
+
 /*Nav right_end  End*/

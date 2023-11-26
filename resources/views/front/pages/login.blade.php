@@ -5,8 +5,6 @@
 
 
 <style>
-
-
         .box-form {
             margin: 3rem auto;
             width: 70%;
@@ -222,7 +220,7 @@
 <br>
                     <div class="remember-me--forget-password justify-content-end">
                         <p>
-                            <a href="{{ url('forgot-password') }}">forget password?</a>
+                            <a href="{{ url('forgot-password') }}">forgot password?</a>
                         </p>
                     </div>
 

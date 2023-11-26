@@ -271,8 +271,8 @@
             <div class="d-flex flex-wrap justify-content-center justify-content-md-between gap-3" style="margin: 0 5%">
                 <p>©2022 MORENT. All rights reserved</p>
                 <div class="d-flex gap-3">
-                    <p>Privacy & Policy</p>
-                    <p>Terms & Condition</p>
+                    <a href="{{ url('/privacypolicy') }}">Privacy & Policy</a>
+                    <a href="{{ url('/termcondition') }}">Terms & Condition</a>
                 </div>
             </div>
         </footer>
@@ -461,6 +461,11 @@
             const profileModal = $(".profile_modal");
             const userProfileSm = $(".user_profile_sm");
 
+
+            // currency
+            const currency = $(".currency");
+            const currency_modal = $('.currency_modal');
+
             // Toggle sidebar when hamburger menu is clicked
             hamMenu.click(function() {
                 navSideCenter.toggleClass("hide");
@@ -471,6 +476,12 @@
                     profileModal.toggleClass("hide");
                 });
             });
+
+
+            currency.on("click", function(){
+                currency_modal.toggleClass("hide")
+            });
+
 
             // Close sidebar when clicked outside
             $(document).click(function(event) {
@@ -489,6 +500,17 @@
                         'hide')) {
                     profileModal.addClass('hide');
                 }
+
+                // Currency
+                const isCur = $(event.target).closest('.currency').length > 0;
+                const isCurModal = $.contains(currency_modal[0], event.target);
+
+                // Check if click was outside user_profile and profile_modal and profile_modal is not hidden
+                if (!isCur && !isCurModal && !currency_modal.hasClass(
+                        'hide')) {
+                    currency_modal.addClass('hide');
+                }
+
             });
 
             // Prevent sidebar from closing when clicked inside
@@ -498,6 +520,10 @@
 
             // Prevent profile modal from closing when clicked inside
             profileModal.click(function(event) {
+                event.stopPropagation();
+            });
+
+            currency_modal.click(function(event) {
                 event.stopPropagation();
             });
 

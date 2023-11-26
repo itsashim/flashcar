@@ -17,11 +17,21 @@
             <div class="user_profile" >
                 <img src="{{asset('public/new-images/demo_user.png')}}"/>
             </div>
+            <!-- Currency  -->
+            <div class="currency">
+              <a href="#">🇳🇵रु</a>
+            </div>
+           <!-- Currency End -->
         </div>
         @else
-        <div class="right">
+        <div class="right  d-flex gap-2 align-items-center">
             <button type="button" class="btns_con register_url">Register</button>
             <button type="button" class="btns_log login_url">Login</button>
+            <!-- Currency  -->
+            <div class="currency">
+              <a href="#">🇳🇵रु</a>
+            </div>
+           <!-- Currency End -->
         </div>
         @endif
     </div>
@@ -30,13 +40,21 @@
 
 
 
-<!--Profile modal -->
+        <!--Profile modal -->
         <div class="profile_modal hide">
             <a href="{{ asset('myaccount') }}">My profile</a>
             <div class="divider"></div>
             <a href="{{ asset('userlogout') }}">Log out</a>
         </div>
         <!--Profile modal -->
+
+        <!--currency  modal -->
+        <div class="currency_modal  hide">
+        <a href="{{ asset('myaccount') }}">🇳🇵रु</a>
+        <div class="divider"></div>
+        <a href="{{ asset('userlogout') }}">🇺🇸$</a>
+        </div>
+        <!--currency modal -->
 
 <!-- Nav Bar Small Screen -->
 <div class="nav_bar_sm  justify-content-around align-items-center">
@@ -60,11 +78,22 @@
                 <div class="user_profile" >
                     <img src="{{asset('public/new-images/demo_user.png')}}"/>
                 </div>
+            <!-- Currency  -->
+            <div class="currency">
+              <a href="#">🇳🇵रु</a>
+            </div>
+           <!-- Currency End -->
             </div>
             @else
-            <div class="right d-flex gap-2">
+            <div class="right d-flex gap-2 align-items-center">
                 <button type="button" class="btns_con register_url">Register</button>
                 <button type="button" class="btns_log login_url">Login</button>
+                    <!-- Currency  -->
+                    <div class="currency">
+                    <a href="#">🇳🇵रु</a>
+                    </div>
+                <!-- Currency End -->
+
             </div>
             @endif
     <div class="nav_side hide">
