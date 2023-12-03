@@ -4,21 +4,21 @@
     <!-- Hero Section -->
     <div class="header_banner d-none d-md-block">
         <div class="hero_sec">
-          <div class="hero_sec_carousel owl-carousel">
-            <div class="hero_carousel_item">
-              <img src="{{asset('public/new-images/lambo.png')}}" alt="" />
-            </div>
+            <div class="hero_sec_carousel owl-carousel">
+                <div class="hero_carousel_item">
+                    <img src="{{ asset('public/new-images/lambo.png') }}" alt="" />
+                </div>
 
-            <div class="hero_carousel_item">
-              <img src="{{asset('public/new-images/lambo.png')}}" alt="" />
+                <div class="hero_carousel_item">
+                    <img src="{{ asset('public/new-images/lambo.png') }}" alt="" />
+                </div>
             </div>
-          </div>
-          <div class="side">
-            <img class="yellow-car" src="{{asset('public/new-images/yellow-car.png')}}" alt="yellow car" />
-          </div>
-          <div class="side">
-            <img class="yellow-car-2" src="{{asset('public/new-images/yellow-car-3.png')}} " alt="yellow car" />
-          </div>
+            <div class="side">
+                <img class="yellow-car" src="{{ asset('public/new-images/yellow-car.png') }}" alt="yellow car" />
+            </div>
+            <div class="side">
+                <img class="yellow-car-2" src="{{ asset('public/new-images/yellow-car-3.png') }} " alt="yellow car" />
+            </div>
         </div>
 
         <div class="img_2">
@@ -55,7 +55,7 @@
     <!-- Hero Section Small desktop End -->
 
     <!-- Cards Section -->
-    {{-- <div class="cards pick_drop_cards position-relative" >
+    <div class="cards pick_drop_cards position-relative">
         <div class="d-flex justify-content-center">
             <!-- Card 1 - Pick-Up -->
             <div class="row" style="width: 100%; max-width: 800px">
@@ -63,9 +63,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 p-3">
                     <div class="card_up">
                         <div class="">
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
+                            <div class="form-check mb-3 ps-0">
+                            {{--<input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1"> --}}
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     <h5>Pick-Up</h5>
                                 </label>
@@ -76,15 +76,12 @@
                                 <div class="">
                                     <h6>Location</h6>
                                     <div class="dropdown">
-                                        <a class="btn  dropdown-toggle px-0" href="#" role="button"
-                                            data-bs-toggle="dropdown">
-                                            Semarang
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <select id="startLocation" class="form-select" aria-label">
+                                            <option value="">Select Location</option>
+                                            @foreach ($cities as $city)
+                                                <option value="{{ $city->id }}">{{ $city->name }}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                 </div>
 
@@ -95,15 +92,7 @@
                                 <div class="">
                                     <h6>Date</h6>
                                     <div class="dropdown">
-                                        <a class="btn  dropdown-toggle px-0" href="#" role="button"
-                                            data-bs-toggle="dropdown">
-                                            Semarang
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <input type="date" class="form-control" id="startDate">
                                     </div>
                                 </div>
 
@@ -111,21 +100,13 @@
                                 <div class="line_1"></div>
                                 <!-- Time Dropdown -->
 
-                                <div class="">
+                    {{--        <div class="">
                                     <h6>Time</h6>
                                     <div class="dropdown">
-                                        <a class="btn  dropdown-toggle px-0" href="#" role="button"
-                                            data-bs-toggle="dropdown">
-                                            Semarang
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <input type="time" class="form-control" id="startTime">
                                     </div>
-                                </div>
-                            </div>
+                                </div>    --}}
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -134,9 +115,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 p-3">
                     <div class="card_up">
                         <div class="">
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2">
+                            <div class="form-check mb-3 ps-0">
+                           {{-- <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2"> --}}
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     <h5>Drop-off</h5>
                                 </label>
@@ -146,50 +127,29 @@
                                 <!-- Location Dropdown -->
                                 <div class="">
                                     <h6>Location</h6>
-                                    <div class="dropdown">
-                                        <a class="btn  dropdown-toggle px-0" href="#" role="button"
-                                            data-bs-toggle="dropdown">
-                                            Semarang
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
+                                    <select id="endLocation" class="form-select" aria-label">
+                                        <option value="">Select Location</option>
+                                        @foreach ($cities as $city)
+                                            <option value="{{ $city->id }}">{{ $city->name }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                                 <!-- Date Dropdown -->
                                 <div class="line_1"></div>
                                 <div class="">
                                     <h6>Date</h6>
                                     <div class="dropdown">
-                                        <a class="btn  dropdown-toggle px-0" href="#" role="button"
-                                            data-bs-toggle="dropdown">
-                                            Semarang
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <input type="date" class="form-control" id="endDate">
                                     </div>
                                 </div>
                                 <!-- Time Dropdown -->
                                 <div class="line_1"></div>
-                                <div class="">
+                             {{--<div class="">
                                     <h6>Time</h6>
                                     <div class="dropdown">
-                                        <a class="btn  dropdown-toggle px-0" href="#" role="button"
-                                            data-bs-toggle="dropdown">
-                                            Semarang
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <input type="time" class="form-control" id="endTime">
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -200,15 +160,15 @@
 
         <!-- Exchange Button -->
         <a href="#" class="exch"><button type="button">
-            <img src="{{asset('public/new-images/Swap.svg')}}">
-        </button></a>
+                <img src="{{ asset('public/new-images/Swap.svg') }}">
+            </button></a>
 
         <!-- Button Section -->
         <div class="btns text-center mt-4 d-none d-md-block">
-            <button type="button" class="btn_1">Book Now</button>
-            <button type="button" class="btn_2">Contact Us</button>
+            <button type="button" class="btn_1 book_now">Book Now</button>
+            <a href="{{ asset('contact_us') }}"><button type="button" class="btn_2">Contact Us</button></a>
         </div>
-    </div> --}}
+    </div>
 
     <div class="more_services container container-sm">
         <div class="row justify-content-center">
@@ -234,7 +194,8 @@
             <div class="col-lg-4 col-md-5 col-sm-12 ">
                 <div class="owl-carousel owl-theme" id="service_card">
                     <div class="rental_img">
-                        <img src="{{ asset('public/new-images/Frame 427320752.png') }}" width="100%" alt="car_rental_img">
+                        <img src="{{ asset('public/new-images/Frame 427320752.png') }}" width="100%"
+                            alt="car_rental_img">
                     </div>
                     <div class="rental_img">
                         <img src="{{ asset('public/new-images/Group 1000001787.png') }}" width="100%"
@@ -267,8 +228,10 @@
 
                 <div class="d-flex justify-content-between mb-3">
                     <h5>Popular Car</h5>
-                    <a href="{{'/car-list'}}" class="text-warning">View All</a>
+                    <a href="{{ '/car-list' }}" class="text-warning">View All</a>
                 </div>
+
+
 
                 <div class="owl-carousel owl-theme" id="popular_car-carousel">
                     @foreach ($doctors as $doctor)
@@ -304,6 +267,9 @@
                             </div>
                         </div>
                     @endforeach
+
+
+
                 </div>
             </div>
         </div>
@@ -363,11 +329,13 @@
         </div>
     </div>
 
+    <!--Blogs Section-->
+
     <div class="blogs_cards mt-5 d-none d-md-block">
 
         <div class="row mx-0">
 
-            <div class="col-xl-4  col-sm-12">
+            <div class="col-xl-3  col-sm-12">
                 <div class="blogs">
                     <h1>Blogs</h1>
                     <p>We are constantly publishing informative and insightful blogs covering a wide variety of
@@ -383,7 +351,7 @@
             </div>
 
 
-            <div class="col-xl-8  col-sm-12">
+            <div class="col-xl-9  col-sm-12">
 
                 <div class="big_card">
                     @php
@@ -411,14 +379,16 @@
 
                         @foreach ($blogs->take(5) as $blog)
                             @if ($counter == 1)
-                                <div class="col-lg-6 col-md-12 col-sm-12 p-1">
+                                <div class="col-lg-5 col-md-12 col-sm-12 p-1">
                                     <div class="card tall_card" style="width: 100%; height: 100%; margin: 0;">
-                                        <img src="{{ asset('public/' . $blog->image) }}" class="card-img-top"
-                                            alt="...">
+                                        <div class="tall_blog_img">
+                                            <img src="{{ asset('public/' . $blog->image) }}" class="card-img-top"
+                                                alt="...">
+                                        </div>
                                         <div class="card-body">
                                             <h5 class="card-title">{{ $blog->title }}
                                             </h5>
-                                            <p class="card-text">{!! limitAndStripTags($blog->description, 400) !!}</p>
+                                            <p class="card-text">{!! limitAndStripTags($blog->description, 100) !!}</p>
                                             <a href="{{ asset('blogs/' . $blog->slug) }}">
                                                 <button type="button"
                                                     class="read_more  mt-3 d-flex align-items-center">Read More<svg
@@ -434,7 +404,7 @@
                                     </div>
                                 </div>
                             @elseif($counter == 2)
-                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="col-lg-7 col-md-12 col-sm-12">
 
                                     <div class="small_cards">
 
@@ -442,11 +412,13 @@
 
                                             <div class="col-lg-6 col-md-6 col-sm-6 p-1">
                                                 <div class="card" style="width: 100%; height: 100%; margin: 0;">
-                                                    <img src="{{ asset('public/' . $blog->image) }}" class="card-img-top"
-                                                        alt="...">
+                                                    <div class="blog_img">
+                                                        <img src="{{ asset('public/' . $blog->image) }}"
+                                                            class="card-img-top" alt="...">
+                                                    </div>
                                                     <div class="card-body">
                                                         <h5 class="card-title">{{ $blog->title }}</h5>
-                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 200) !!}</p>
+                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 65) !!}</p>
                                                         <a href="{{ asset('blogs/' . $blog->slug) }}">
                                                             <button type="button"
                                                                 class="read_more  mt-3 d-flex align-items-center">Read
@@ -464,11 +436,13 @@
                                         @elseif($counter == 3)
                                             <div class="col-lg-6 col-md-6 col-sm-6 p-1">
                                                 <div class="card" style="width: 100%; height: 100%; margin: 0;">
-                                                    <img src="{{ asset('public/' . $blog->image) }}" class="card-img-top"
-                                                        alt="...">
+                                                    <div class="blog_img">
+                                                        <img src="{{ asset('public/' . $blog->image) }}"
+                                                            class="card-img-top" alt="...">
+                                                    </div>
                                                     <div class="card-body">
                                                         <h5 class="card-title">{{ $blog->title }}</h5>
-                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 200) !!}</p>
+                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 65) !!}</p>
                                                         <a href="{{ asset('blogs/' . $blog->slug) }}">
                                                             <button type="button"
                                                                 class="read_more  mt-3 d-flex align-items-center">Read
@@ -486,11 +460,13 @@
                                         @elseif($counter == 4)
                                             <div class="col-lg-6 col-md-6 col-sm-6 p-1">
                                                 <div class="card" style="width: 100%; height: 100%; margin: 0;">
-                                                    <img src="{{ asset('public/' . $blog->image) }}" class="card-img-top"
-                                                        alt="...">
+                                                    <div class="blog_img">
+                                                        <img src="{{ asset('public/' . $blog->image) }}"
+                                                            class="card-img-top" alt="...">
+                                                    </div>
                                                     <div class="card-body">
                                                         <h5 class="card-title">{{ $blog->title }}</h5>
-                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 200) !!}</p>
+                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 65) !!}</p>
                                                         <a href="{{ asset('blogs/' . $blog->slug) }}">
                                                             <button type="button"
                                                                 class="read_more  mt-3 d-flex align-items-center">Read
@@ -508,11 +484,13 @@
                                         @elseif($counter == 5)
                                             <div class="col-lg-6 col-md-6 col-sm-6 p-1">
                                                 <div class="card" style="width: 100%; height: 100%; margin: 0;">
-                                                    <img src="{{ asset('public/' . $blog->image) }}" class="card-img-top"
-                                                        alt="...">
+                                                    <div class="blog_img"><img
+                                                            src="{{ asset('public/' . $blog->image) }}"
+                                                            class="card-img-top" alt="...">
+                                                    </div>
                                                     <div class="card-body">
                                                         <h5 class="card-title">{{ $blog->title }}</h5>
-                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 200) !!}</p>
+                                                        <p class="card-text">{!! limitAndStripTags($blog->description, 65) !!}</p>
                                                         <a href="{{ asset('blogs/' . $blog->slug) }}">
                                                             <button type="button"
                                                                 class="read_more  mt-3 d-flex align-items-center">Read
@@ -538,6 +516,7 @@
             </div>
         </div>
     </div>
+    <!--Blogs Section-->
 
     <!-- TEstimonial Section -->
     <div class="testimonials">
@@ -618,146 +597,7 @@
         </div>
 
     </div>
-    <!-- TEstimonial Section -->
 
-    {{-- <div class="modal" id="modalHealthPartner" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-modal="true" style="display: block; padding-left: 0px;">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <form id="appliedHealthForm" action="{{ asset('applied-health-partner') }}" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="modal-header" data-aos="zoom-in" style="background-color:#019444;">
-                        <h5 class="modal-title">Become a Vendor</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="row hide" id="alertSectionAHP">
-                        <div class="col-sm-12">
-                            <div class="alert" id="alertMsgAHP"></div>
-                        </div>
-                    </div>
-                    <div class="modal-body" id="bodySectionAHP" data-aos="zoom-in" style="background-color:#f1f1f9">
-                        @csrf
-                        <div class="row">
-
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="healthpartnername" class="form-label fw-semi">Vendor Name <span
-                                        class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="healthpartnername"
-                                    name="health_partner_name" placeholder="Enter your Health Partner Name">
-                            </div>
-                            <!--column-->
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="firstname" class="form-label fw-semi">First Name <span
-                                        class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="first_name" name="first_name"
-                                    placeholder="Enter First Name">
-                            </div>
-                            <!--column-->
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="lastname" class="form-label fw-semi">Last Name <span
-                                        class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="last_name" name="last_name"
-                                    placeholder="Enter Last Name">
-                            </div>
-                            <!--column-->
-
-
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="mobileno" class="form-label fw-semi">Phone Number <span
-                                        class="text-primary">*</span> </label>
-                                <input type="number" class="form-control" id="mobileno" name="phone"
-                                    onkeypress="validatePhoneNumber(6)" maxlength="10" pattern="[1-9]{1}[0-9]{9}"
-                                    placeholder="Enter your Phone Number">
-                            </div>
-                            <!--column-->
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="email" class="form-label fw-semi">Email <span
-                                        class="text-primary">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Enter your Email Address">
-                            </div>
-
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="password" class="form-label fw-semi">Password <span
-                                        class="text-primary">*</span></label>
-                                <input type="password" class="form-control" id="password" name="password"
-                                    placeholder="Enter your Password">
-                            </div>
-                            <!--column-->
-
-
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="address" class="form-label fw-semi">Address<span class="text-primary">
-                                        *</span></label>
-                                <input type="text" class="form-control" id="address" name="address"
-                                    placeholder="Enter your  Address">
-                            </div>
-                            <!--column-->
-
-                            <!--column-->
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="type" class="form-label fw-semi">Upload Document<span
-                                        class="text-primary"> *</span></label>
-                                <input type="file" id="file" name="document" class="form-control">
-                            </div>
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <label for="type" class="form-label fw-semi">Upload Logo
-
-                                    <input type="file" id="file" name="logo" class="form-control">
-                                </label>
-                            </div>
-                            <!--column-->
-                            <div class="col-md-6 mb-3" data-aos="zoom-in">
-                                <img src="" id="previmage" name="previmage" style="display:none">
-                            </div>
-                            <!--column-->
-
-                            <div class="col-md-12 mb-3 department_select" data-aos="zoom-in"
-                                style="display: flex; align-items: center;">
-                                <label for="department" class="form-label fw-semi">Department<span
-                                        class="text-primary">*</span></label>
-                                <select name="department_ids[]" class="form-control select2 select2-hidden-accessible"
-                                    multiple="" required="" data-select2-id="4" tabindex="-1"
-                                    aria-hidden="true">
-                                    <!--<option selected disabled>Select Department</option>-->
-                                    <option value="1">Electronics</option>
-                                    <option value="2">Electricals</option>
-                                    <option value="3">Plumbing</option>
-                                    <option value="4">False Ceiling &amp; Decoration</option>
-                                    <option value="5">Beautician</option>
-                                    <option value="6">Computer</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
-                                    data-select2-id="5" style="width: auto;"><span class="selection"><span
-                                            class="select2-selection select2-selection--multiple" role="combobox"
-                                            aria-haspopup="true" aria-expanded="false" tabindex="-1"
-                                            aria-disabled="false">
-                                            <ul class="select2-selection__rendered">
-                                                <li class="select2-search select2-search--inline"><input
-                                                        class="select2-search__field" type="search" tabindex="0"
-                                                        autocomplete="off" autocorrect="off" autocapitalize="none"
-                                                        spellcheck="false" role="searchbox" aria-autocomplete="list"
-                                                        placeholder="" style="width: 0.75em;"></li>
-                                            </ul>
-                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn becomepartnerBtn mt-3 ms-2 me-3" id="formsubmitBtn"
-                            style="background-color:#019444; color: white;">
-                            Become a Service Provider
-                        </button>
-                        <button type="button" class="btn btn-danger mt-3 float-right"
-                            data-bs-dismiss="modal"="modal"="">
-                            Close
-                        </button>
-                    </div>
-                    <div class="modal-footer" data-aos="zoom-in" style="background-color:#019444; height: 50px;">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> --}}
 @endsection
 @section('scripts')
     <script>
@@ -773,17 +613,28 @@
             $(document).on('click', '.more_cars', function() {
                 window.location.href = "{{ asset('car-list') }}";
             });
-        })
+
+            $(document).on('click','.book_now',function(){
+                let id = $(this).data('id');
+                let startDate = $('#startDate').val();
+                let endDate = $('#endDate').val();
+                let startLocation = $('#startLocation').val();
+                let endLocation = $('#endLocation').val();
+                let startTime = $('#startTime').val();
+                let endTime = $('#endTime').val();
+                window.location.href = "{{ asset('car-list') }}"+"?startDate="+startDate+"&endDate="+endDate+"&startLocation="+startLocation+"&endLocation="+endLocation+"&startTime="+startTime+"&endTime="+endTime;
+            });
+        });
     </script>
 
     <!--Hero Section-->
 
     <script>
-            $('.hero_sec_carousel').owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: false,
-          items: 1
-      })
+        $('.hero_sec_carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            items: 1
+        })
     </script>
 @endsection

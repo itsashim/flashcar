@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
         <!-- Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css">
     <!--Google fonts End-->
@@ -84,8 +84,8 @@
             </div>
         </footer> --}}
         {{-- footer for desktop end --}}
-        
-        
+
+
             {{-- footer for mobile --}}
 
         {{--    <footer class="mobile d-block d-md-none">
@@ -93,7 +93,7 @@
                     <div class="foot_img_mbl d-sm-flex justify-content-center">
                         <img src="{{ asset('public/new-images/New Project.png') }}" alt="footer">
                     </div>
-        
+
                     <div class="foot_text ms-auto mt-3">
                         <div class="footer-logo">
                             <a class="d-flex justify-content-center" href="{{ url('/') }}"><img
@@ -146,7 +146,7 @@
                                 </ul>
                             </div>
                         </div>
-        
+
                         <section class="newsletter mb-5">
                             <div class="container">
                                 <div class="row">
@@ -166,12 +166,12 @@
                                 </div>
                             </div>
                         </section>
-        
+
                     </div>
-        
+
                 </div>
             </footer> --}}
-        
+
             {{-- footer for mobile end --}}
     @else
         {{-- Conditional Footer --}}
@@ -221,13 +221,13 @@
             </div>
         </footer> --}}
         {{-- Conditional Footer End --}}
-    @endif       
-        
+    @endif
+
         <div class="foot_img d-sm-flex mt-3" style="transform: translate(0,0)">
             <img class="lg-img" src="{{ asset('public/new-images/footer-img.png') }}" alt="footer">
             <img class="sm-img" src="{{ asset('public/new-images/New Project.png') }}" alt="footer">
         </div>
-   
+
 
         {{-- Conditional Footer --}}
         <footer class="px-5 pb-3">
@@ -238,7 +238,7 @@
                         Our vision is to provide convenience<br />
                         and help increase your sales business.
                     </p>
-                     <button class="btn btn_1 mt-3 btn-vendor border-0" type="button">Register As Vendor</button>
+                     <a href="{{asset('/register-vendor')}}" class="btn btn_1 mt-3 btn-vendor border-0" >Register As Vendor</a>
                 </div>
 
                 <div class="Bot d-flex flex-wrap">
@@ -255,7 +255,9 @@
                         <a href="#">Event</a><br />
                         <a href="#">Blog</a><br />
                         <a href="#">Posdcast</a><br />
-                        <a href="#">Invite a friend</a>
+                        <a href="#">Invite a friend</a><br />
+                        <a href="{{asset('/register-vendor')}}">Become a vendor</a><br />
+                        <a href="{{asset('/admin')}}">Vendor's Login</a>
                     </div>
 
                     <div class="C3">
@@ -270,7 +272,7 @@
             <div class="footer_divider  my-3"></div>
             <div class="d-flex flex-wrap justify-content-center justify-content-md-between gap-3" style="margin: 0 5%">
                 <p>©2022 MORENT. All rights reserved</p>
-                <div class="d-flex gap-3">
+                <div class="d-flex gap-3 Bot">
                     <a href="{{ url('/privacypolicy') }}">Privacy & Policy</a>
                     <a href="{{ url('/termcondition') }}">Terms & Condition</a>
                 </div>
@@ -281,7 +283,7 @@
 
     </div>
 
-    <div class="modal fade" id="vendorModal" tabindex="-1" role="dialog"
+  {{--  <div class="modal fade" id="vendorModal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -320,6 +322,22 @@
                             <span id="error_confirm_password"></span>
                         </div>
                         <div class="form-group">
+                            <label for="country">Country</label>
+                            @php $countries = \App\Country::all(); @endphp
+                            <select id="countryID" name="country_id" class="form-control">
+                                <option value="">Select Country</option>
+                                @foreach ($countries as $country )
+                                    <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <select id="cityID" name="city_id" class="form-control">
+                                <option value="">Select City</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="passport">Passport</label>
                             <input type="file" name="passport" class="form-control">
                             <span id="error_passport"></span>
@@ -346,7 +364,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -372,8 +390,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="script.js"></script>
     @yield('scripts')
 
     <script>
@@ -590,6 +606,43 @@
         $(document).on('click','.close',function(){
             $('.modal').modal('hide');
         });
+
+        $('#countryID').on('change',function(){
+
+            let country_id = $(this).val();
+
+            let url = "{{ asset('get-city') }}";
+
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: url,
+                type: "POST",
+                data: {
+                    "country_id": country_id,
+                },
+                beforeSend: function() {
+                    console.log('ajax fired');
+                },
+                success: function(data) {
+                    if (data.status == true) {
+                        $('#cityID').empty();
+                        $('#cityID').append('<option value="">Select City</option>');
+                        $.each(data.cities ,function(key,value){
+                            $('#cityID').append('<option value="'+value.id+'">'+value.name+'</option>');
+                        });
+                    } else {
+                        console.log(data.message);
+                    }
+                },
+                error: function(xhr) {
+                    console.log(xhr);
+                }
+            });
+        });
+
+        $('#countryID').change();
 
 
     </script>
