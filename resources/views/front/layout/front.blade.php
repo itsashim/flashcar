@@ -223,12 +223,13 @@
         {{-- Conditional Footer End --}}
     @endif
 
-        <div class="foot_img d-sm-flex mt-3" style="transform: translate(0,0)">
+        <div class="foot_img d-sm-flex" style="transform: translate(0,0)">
             <img class="lg-img" src="{{ asset('public/new-images/footer-img.png') }}" alt="footer">
+            <img class="lg-img android_img" src="{{ asset('public/new-images/andriod-footer-fone.png') }}" alt="footer">
             <img class="sm-img" src="{{ asset('public/new-images/New Project.png') }}" alt="footer">
         </div>
 
-
+1
         {{-- Conditional Footer --}}
         <footer class="px-5 pb-3">
             <div class="footer_ d-flex justify-content-around flex-wrap">

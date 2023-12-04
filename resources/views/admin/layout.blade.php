@@ -60,6 +60,9 @@
             position: absolute;
             margin: -2px 0px 0px 12px;
          }
+         #service_wrapper{
+            max-width: 400px !important;
+         }
       </style>
    </head>
    <body class="rtl" onload="gettimezone()">

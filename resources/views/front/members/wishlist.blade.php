@@ -52,6 +52,17 @@
       .text-green{
         color: #00be9c;
       }
+      .wish_img{
+        width: 100%;
+        max-width: 275px;
+        height: 150px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+      }
+      .wish_img img{
+        width: 100%;
+      }
 </style>
 @endsection
 @section('content')
@@ -59,43 +70,39 @@
 
 <div class="container">
     <br>
-    <h2>Product list</h2>
+    <h2>Cars list</h2>
 
     <div class="row mx-0">
         @if($products->count()>0)
     @foreach($products as $product)
-        <div class="col-sm-6 col-md-6 col-lg-4 prod_{{ $product->id }}">
+        <div class="col-sm-6 col-md-6 col-lg-4 prod_{{ $product->id }} ps-0">
             <div class="card mb-2">
-                <div class="card-head" style="text-align: center;padding:10px;">
-                    <a href="{{ asset('product_details/'.$product->slug) }}">
-                    <img src="{{ asset('public/'.$product->photo) }}"
+                <div class="card-head wish_img" style="text-align: center;padding:10px;">
+                    <a href="{{ asset('car_details/'.$product->id) }}">
+                    <img src="{{ asset('public/' . $product->carGalleries[0]->image_path) }}"
                         alt="{{ $product->name }}"
-                        class="img-thumbnail"
+                        class=""
                         style="height:auto;"
                     />
                     </a>
                 </div>
                 <div class="card-body">
-                    <a href="{{ asset('product_details/'.$product->slug) }}">
+                    <a href="{{ asset('car_details/'.$product->id) }}">
                         <span class="text-success text-uppercase ">{{ $product->name }}</span><br/>
-                        
-                    </a><span class="text-dark">Price:Rs {{ $product->price }}</span>
-                     
+
+                    </a><span class="text-dark">Price:AED {{ $product->daily_fee }}</span>
+
                     <button class="btn btn-sm btn-danger float-right removeWishlist" alt="Remove from wishlist" data-id="{{ $product->id }}" style="margin-left:1rem;" >
-                         <i class="fa fa-trash"></i>
-                        
+                        <i class="fa fa-trash"></i>
                     </button>
-                     
-                    <button class="btn btn-sm btn-success float-right moveToCart" alt="Add to wishlist" data-id="{{ $product->id }}" style="margin-left:1rem;">
-                       <i class="fa  fa-shopping-cart"></i>
-                    </button> 
+
                 </div>
             </div>
         </div>
     @endforeach
     @else
     <div class="col-sm-12 p-0">
-    <div class="alert alert-warning">No Products Found!</div>
+    <div class="alert alert-warning">No Cars Found!</div>
     </div>
     @endif
     </div>
@@ -115,7 +122,7 @@
         $(document).on('click','.removeWishlist',function(){
             RemoveWishList();
         });
-        
+
         const RemoveWishList = () =>{
             //let element = $('.wishlist');
             let id = $('.removeWishlist').data('id');
@@ -148,13 +155,13 @@
                 }
             });
         }
-        
+
         $(document).on('click', '.moveToCart', function() {
 
             @if(auth()->user())
-            
+
             RemoveWishList();
-            
+
             let id = $(this).data('id');
             let url = "{{ asset('/add-to-cart') }}";
             $.ajax({
@@ -172,7 +179,7 @@
                 success: function(data) {
                     if (data.status == true) {
                         toastr.success(data.message);
-                        // alert(data.message);      
+                        // alert(data.message);
                         $('.prod_'+data.id).remove();
                         $('#cartTotalCount').html(data.cartCount);
                     } else {
@@ -190,9 +197,9 @@
 
             @endif
         });
-        
-        
-        
-        
+
+
+
+
 	</script>
 @endsection
