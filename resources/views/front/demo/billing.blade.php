@@ -27,9 +27,9 @@
             width: 100%;
         }
 
-        
 
-         
+
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
@@ -89,9 +89,10 @@
         transform: translate(-50%, 0);
         height: 100vh;
         padding: 4rem 0;
+        padding-top: 2rem;
         z-index: 9999;
     }
-    
+
 
     .condtion_modal{
 
@@ -112,7 +113,7 @@ j
       .tnc{
         width: min(100% - 3rem, 65ch);
         margin: 0 auto;
-  
+
       }
 
       .tnc h1{
@@ -180,7 +181,6 @@ j
                         <p>Please select your rental date</p>
 
                         <div class="form-check">
-                            <!--<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />-->
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Pick-Up
                             </label>
@@ -307,7 +307,8 @@ j
                         <div class="d-flex justify-content-between">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="payment_method" value="paypal"
-                                    id="flexRadioDefault1" />
+                                     />
+                                     <!--{{-- id="flexRadioDefault1" --}}-->
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Paypal
                                 </label>
@@ -320,7 +321,8 @@ j
                         <div class="d-flex justify-content-between align-items-center mt-3">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="payment_method" value="cash_on_delivery"
-                                    id="flexRadioDefault1" />
+                                     />
+                                     {{-- id="flexRadioDefault1" --}}
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Cash On Delivery
                                 </label>
@@ -347,10 +349,11 @@ j
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                               required />
+                               />
                             <label class="form-check-label" for="flexCheckChecked">
                                 I agree with our terms and conditions and privacy policy.
                             </label>
+                            <i class="fa-solid fa-circle-check hide agreed"></i>
                         </div>
 
                         <button class="btn_1 rentNow" role="button" >Rent Now</button>
@@ -458,10 +461,7 @@ j
                     </p>
                 </div>
                 @endif
-                <div class="subtotal d-flex justify-content-between">
-                    <p>Deposit Gurantee</p>
-                    <h6>{{ session()->get('currency_symbol') }} {{ convertCurrency($car->department->deposit_guarantee, 'USD', session('currency_symbol')) }}</h6>
-                </div>
+
                 <div class="total_rental d-flex justify-content-between">
                     <div>
                         <h4>Total Rental Price</h4>
@@ -471,6 +471,11 @@ j
                         <h2>{{ session()->get('currency_symbol') }} {{ $grandTotal }}</h2>
                     </div>
                 </div>
+
+                <div class="subtotal d-flex justify-content-between">
+                    <p>Deposit Gurantee (Payable at Delivery)</p>
+                    <h6>{{ session()->get('currency_symbol') }} {{ convertCurrency($car->department->deposit_guarantee, 'USD', session('currency_symbol')) }}</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -478,8 +483,8 @@ j
 
 
     <!-- Terms and condtion Modal -->
-    <div class="overlay hide">
-    <div class="condtion_modal">
+    <div  class="overlay hide">
+     <div class="condtion_modal">
     <section class="tnc bg-white py-5">
       <h1 class="text-center">Contrato de arrendamiento</h1>
       <span class="text-center  d-block">Número de contrato R65559</span>
@@ -493,7 +498,7 @@ j
       </p>
       <p>
         Contrato de arrendamiento de vehículos que celebran por una parte el
-        arrendador “Arrendadora de autos comerciales “Flash Car” representado en
+        arrendador “Arrendadora de autos comerciales Flash Car” representado en
         este acto por Jose Manuel Maldonado Alcantar y en contraparte el
         arrendatario C. RAMON ANTONIO HALE ZUÑIGA mismos que por medio del
         presente manifiestan su voluntad para obligarse de acuerdo a siguiente
@@ -504,7 +509,7 @@ j
       <ol>
         <li>
           Consumidor o Arrendatario. Persona física que obtiene en arrendamiento
-          el uso y goce temporal del vehículo objeto de este contrato quien
+          el uso y goce temporal del vehculo objeto de este contrato quien
           recibirá el nombre de arrendatario.
         </li>
         <li>
@@ -534,7 +539,7 @@ j
           <p>
             Para efectos aplicativos al consumidor se proporciona la línea de
             contacto para cualquier asunto relacionado con este contrato el
-            número telefónico: 5611285775 en horarios de atención las 24 horas.
+            número telefónico: 5611285775 en horarios de atencin las 24 horas.
             los 365 días del año y/o en la dirección de correo electrónico
             <a href="mailto: flashcarental@gmail.com">flashcarental@gmail.com</a
             >, con domicilio en High Park torre 1, piso 7
@@ -605,7 +610,7 @@ j
         al fin pactado por los contratantes. en caso de que el uso y goce esté
         destinada anticipadamente al transporte en arrendamiento y exceptuando
         los vicios ocultos, el vehículo a su entera satisfacción por lo que
-        obliga a pagar Número de Contrato R65559 , a precios del mercado el
+        obliga a pagar Nmero de Contrato R65559 , a precios del mercado el
         valor comercial del auto en caso de algún accidente o siniestro tanto
         como y durante el periodo de renta al momento de la entrega del mismo en
         la finalización del contrato, en caso que el seguro no cubra los daños
@@ -659,7 +664,7 @@ j
       </p>
       <p>
         OCTAVA Depósito en garantía. El arrendatario se obliga a entregar al
-        arrendador la cantidad señalada en el anexo de este contrato como costo
+        arrendador la cantidad sealada en el anexo de este contrato como costo
         en garantía de cumplimiento de la obligación principal de pago. En
         consecuencia. El arrendador deberá expedir un recibo por dicha cantidad
         en que conste: el nombre o razón social de la misma: fecha e importe del
@@ -720,7 +725,7 @@ j
           lugar acordado por las partes.
         </li>
         <li>
-          Recibir el vehículo sin ninguna condicionante de pago por el límite de
+          Recibir el vehculo sin ninguna condicionante de pago por el límite de
           gasolina, en la inteligencia que el vehículo por ninguna circunstancia
           deberá ser entregado por el arrendatario con un nivel de gasolina
           menor a un cuarto de tanque.
@@ -752,7 +757,7 @@ j
               influencia de drogas.
             </li>
             <li>
-              ﻿ No hacer uso del vehículo en forma lucrativa, ni subarrendarlo
+               No hacer uso del vehículo en forma lucrativa, ni subarrendarlo
             </li>
             <li>
               ﻿ No utilizar el vehículo arrendado para arrastrar remolques y no
@@ -769,7 +774,7 @@ j
             </li>
             <li>
               ﻿ Pagar el importe de las sanciones que le fueran impuestas por
-              violación a los Reglamentos de transito, aun después de concluida
+              violación a los Reglamentos de transito, aun despus de concluida
               la vigencia del contrato, si la infracción se origino durante el
               tiempo en que estuvo el vehiculo arrendando a disposición del
               arrendatario
@@ -817,7 +822,7 @@ j
         entregar el vehículo arrendado, será responsabilidad del arrendatario
         verificar que no existan objetos personales en el vehículo, en caso
         contrario la arrendadora no será responsable de los objetos dejados en
-        el vehículo, ni del daño o demérito que pudiera ocasionarse al ser
+        el vehículo, ni del daño o demrito que pudiera ocasionarse al ser
         transportados dentro del mismo vehículo
       </p>
       <p>
@@ -871,7 +876,7 @@ j
         del presente Número de Contrato R65559 , o en su defecto, presentarla en
         el domicilio descrito en el documento mencionado. En cualquier
         circunstancia el arrendador deberá dar respuesta al arrendatario en un
-        plazo no mayor a dos días hábiles contados a partir de la recepción de
+        plazo no mayor a dos días hbiles contados a partir de la recepción de
         la reclamación o queja.
       </p>
       <p>
@@ -942,6 +947,7 @@ j
 
     <!-- Terms and condtion Modal End-->
 
+
 @endsection
 
 @section('scripts')
@@ -1002,10 +1008,14 @@ j
             let second_driver_info = $("#second_driver_info").val();
             let special_request = $("#special_request").val();
             let noInsurance = '{{ $noInsurance }}';
+
+            if(pickup_location == "" || pickup_time == "" || drop_location == "" || drop_time == "" ){
+                return ;
+            }
             
-            if(pickup_location == "" || pickup_time == "" || drop_location = "" || drop_time == "" )
-              return ;
-              
+
+            
+
             // Check if the checkbox is checked
             if ($("#flexCheckChecked").prop("checked")) {
                 // Checkbox is checked
@@ -1013,16 +1023,12 @@ j
                 // Checkbox is not checked
             return ;
             }
-            $('#flexCheckChecked').on("click", function() {
-            if ($(this).is(":checked")) {
-                console.log("Checkbox is checked");
-                $('.overlay').removeClass('hide');
-            } 
-          });
+            
+            
 
-            $('.agreeBtn').on("click", function(){
-                $('.overlay').addClass('hide');
-            });
+            
+            
+
 
             let data = {
                 duration_type: duration_type,
@@ -1044,8 +1050,8 @@ j
                 second_driver_info: second_driver_info,
                 special_request: special_request,
                 no_insurance : noInsurance
-                
-                
+
+
             }
             $.ajax({
                 headers: {
@@ -1113,9 +1119,36 @@ j
             }
         });
     });
+
+
+
+
+</script>
+
+<script>
+
+            $(".click").on("click", function(){
+                console.log("clicked");
+            })
+
+              $('#flexCheckChecked').on("change", function() {
+                if ($(this).is(":checked")) {
+                  console.log("Checkbox is checked");
+                  $('.overlay').removeClass('hide');
+                } else {
+                  console.log("Checkbox is unchecked");
+                  $('.agreed').addClass("hide");
+                  return ;
+                }
+              });
+
+
+            $('.agreeBtn').on("click", function(){
+                $('.overlay').addClass('hide');
+                $('#flexCheckChecked').attr("disabled");
+                $('.agreed').removeClass("hide");
+            });
+
     
-
-
-
 </script>
 @endsection
