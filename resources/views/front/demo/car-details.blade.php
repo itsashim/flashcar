@@ -89,6 +89,7 @@
 
         .pic3 img {
             width: 100%;
+            max-width: 500px;
         }
 
         .parent1 .Heading {
@@ -98,6 +99,7 @@
 
         .parent1 .Heading div {
             padding: 25px;
+            aspect-ratio: 4/2;
         }
 
         .parent1 .Heading h3 {
@@ -141,6 +143,7 @@
             width: 40%;
             min-width: 200px;
             justify-content: space-between;
+            margin: 0 auto;
         }
 
         .car_attr p,
@@ -175,18 +178,36 @@
         }
 
         .pics {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             width: 100%;
             gap: 15px;
             margin-top: 20px;
+            position: relative;
+            cursor: pointer;
         }
 
         .pic:nth-child(1) {
             background-color: #F8DE22;
             display: flex;
             align-items: center;
-            border-radius: 13.021px;
             padding: 5px;
         }
+
+        .pic:nth-child(4) {
+            background-color: #222;
+            opacity: 0.8;
+            background: linear-gradient(180deg, #000 -15%, rgba(0, 0, 0, 0.00) 48.35%, rgba(0, 0, 0, 0.62) 100%);
+        }
+
+        .pic:nth-child(4)::before {
+            content: "+3";
+            color: white;
+            font-size: 2.3rem;
+            font-weight: 600;
+            position: absolute;
+        }
+
 
         .pic img {
             width: 100%;
@@ -197,7 +218,14 @@
         .pic {
             width: 100%;
             max-width: 250px;
+            border: 1px solid #a6a6a6;
+            border-radius: 8px;
+            background: white;
+            aspect-ratio: 3/2;
+            padding: 0 10px;
         }
+
+
 
         .B {
             justify-content: space-between;
@@ -315,13 +343,65 @@
             color: red !important;
             /* color: #fff !important; */
         }
+        
+
+        /* Plan */
+        .plan{
+        border: 1.267px solid #000;
+        display: flex;
+        border-radius: 12.669px;
+        max-width: 160px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    
+    
+    .plan:nth-child(1){
+           box-shadow: 0px 0px 7.601px 0px rgba(47, 128, 237, 0.25);
+        border: 1.267px solid #FFE500;
+        
+        }
+        
+       .plan:nth-child(1) .icon{
+           background: rgba(229, 206, 0, 0.06);
+       }
+
+        .plan .icon{
+        background: #F7F7F7;
+        padding: 0.6rem;
+        }
+        .plan h4{
+         font-size: 0.8rem;
+        }
+        .plan p{
+        font-size: 0.7rem;
+        }
+        
+        @media(max-width: 767px){
+            .parent1 .Heading div{
+                padding: 0;
+            }
+            .parent1 .Heading p{
+                display: none;
+            }
+            .parent1 .Heading h3{
+                display: none;
+            }
+            .pics{
+            grid-template-columns: 1fr 1fr 1fr;
+            }
+            .parent2 .Heading2{
+             padding: 20px;
+            }
+        }
     </style>
 @endsection
 
 @section('content')
 
     <body>
-        <section class="main_sec row justify-content-center">
+        <section class="main_sec row justify-content-center" style="width: 100%">
 
             <div class="col-xl-11 col-lg-12  col-md-10">
                 <div class="rent">
@@ -339,7 +419,7 @@
                                             Safety and comfort while driving a futuristic<br />
                                             and elegant sports car
                                         </p>
-                                        <div class="pic3">
+                                        <div class="pic3 justify-content-center align-items-center d-flex">
                                             <img id="main-product-image"
                                                 src="{{ asset('public/' . $car->carGalleries[0]->image_path) }}"
                                                 width="50%" />
@@ -347,9 +427,10 @@
                                     </div>
                                 </div>
 
-                                <div class="pics d-flex">
+                                <div class="pics">
+
                                     @foreach ($car->carGalleries as $carGallery)
-                                        <div class="pic flex-grow-1">
+                                        <div class="pic d-flex align-items-center justify-content-center">
                                             <img class="img_select"
                                                 src="{{ asset('public/' . $carGallery->image_path) }}" />
                                         </div>
@@ -439,9 +520,9 @@
 
                                     <div class="B d-flex align-items-center mt-5 flex-wrap">
                                         {{-- <div style="width: 75%;"> --}}
-                                        <div class="col-8">
+                                        <div class="col-12 col-md-8">
                                             <div class="pb-3">
-                                                <table class="table table-striped table-bordered">
+                                                <table class="table table-striped table-bordered d-none d-md-block">
                                                     <thead>
                                                         <tr>
                                                             <th>Daily Fee</th>
@@ -466,6 +547,47 @@
                                                         </tr>
                                                     </thead>
                                                 </table>
+                                                <!--  -->
+
+                                            <div class="mt-4 d-block d-md-none my-4">
+                                                <h3>Plan</h3>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <div class="plan">
+                                                        <div class="icon">
+                                                            <img src="{{asset('public/new-images/time.svg')}}" alt="">
+                                                            <span class="d-block">{{ session()->get('currency_symbol') }}
+                                                                        {{ convertCurrency($car->daily_fee, 'USD', session('currency_symbol')) }}</span>
+                                                        </div>
+                                                        <div class="p-2">
+                                                            <h4 class="mb-0">Hourly Rent</h4>
+                                                            <p class="mb-0">Best for business
+                                                            appointments</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="plan">
+                                                        <div class="icon">
+                                                            <img src="{{asset('public/new-images/Calendar.svg')}}" alt="">
+                                                            <span class="d-block">  {{ session()->get('currency_symbol') }}
+                                                                        {{ convertCurrency($car->weekly_fee, 'USD', session('currency_symbol')) }}</span>
+                                                        </div>
+                                                        <div class="p-2">
+                                                            <h4 class="mb-0">Weekly Rent</h4>
+                                                            <p class="mb-0">Best for travel</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="plan">
+                                                        <div class="icon">
+                                                            <img src="{{asset('public/new-images/Calendar.svg')}}" alt="">
+                                                            <span class="d-block">  {{ session()->get('currency_symbol') }}
+                                                                        {{ convertCurrency($car->monthly_fee, 'USD', session('currency_symbol')) }}</span>
+                                                        </div>
+                                                        <div class="p-2">
+                                                            <h4 class="mb-0">Montly Rent</h4>
+                                                            <p class="mb-0">Best for travel</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                                 @php
                                                     if(request()->startDate && request()->endDate){
                                                         $startDate = \Carbon\Carbon::createFromFormat('Y-m-d', request()->startDate)->format('M j, Y');
@@ -480,6 +602,9 @@
                                         <button data-carid="{{ $car->id }}" type="button" class="btn rentNow">Rent
                                             Now</button>
                                     </div>
+
+                               
+
                                 </div>
                             </div>
                         </div>
@@ -497,9 +622,9 @@
                                     <h6>{{ $doctor->name }}</h6>
                                     <p>{{ $doctor->department->name }}</p>
 
-                                    <div class="img">
+                                    <div class="img d-flex align-items-center justify-content-center">
                                         <img src="{{ asset('public/' . $doctor->carGalleries[0]->image_path) }}"
-                                            class="mt-3" width="220" alt="car">
+                                            class="" width="220" alt="car">
                                     </div>
                                     <div class="d-flex justify-content-between text-muted mt-5">
                                         <a href="#">
